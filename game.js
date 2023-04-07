@@ -61,24 +61,19 @@ div11.className ='box'
 div11.id = '8'
 div2.append(div11)
 
-// function board(div(),id){
+// let element=(id)=>{
 //     document.createElement('div')
-//     (div).id = (id)
-//     (div).className = 'box'
+//     element.createAttribute('class','box')
+//     element.createAttribute('id'(id))
+//     div2.append(element)
+    
     
 //     }
 
-//     board(div4,1)
-//     board(2)
-//     board(3)
-//     board(4)
-//     board(5)
-//     board(6)
-//     board(7)
-//     board(8)
-//     board(9)
+//     element(1)
+   
 
-//     document.div2.append(board)
+    
    
     
     
