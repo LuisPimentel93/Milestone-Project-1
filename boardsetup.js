@@ -1,6 +1,6 @@
 const body = document.body
 
-const div = document.createElement("div")
+const div = document.createElement('div')
 div.className = 'container'
 const h1 = document.createElement('h1')
 h1.id = 'playerText'
@@ -13,7 +13,7 @@ div.append(button)
 document.body.append(div)
 
 const div2 = document.createElement('div')
-div2.id = 'gameBoard'
+div2.id = 'gameboard'
 document.body.append(div2)
 // box 1
 const div3 = document.createElement('div')
