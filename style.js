@@ -29,7 +29,17 @@ boardLayout.style.marginBottom = "40px";
 boardLayout.style.marginLeft = "27%";
 boardLayout.style.marginRight = "27%";
 
+// button 
 
+const reset = document.getElementById("reStartBtn")
+reset.style.padding = " 10px 20px";
+reset.style.borderRadius = "10px";
+reset.style.backgroundColor = "gold";
+reset.style.fontSize = "18px";
+reset.style.transition = "200ms transform";
+reset.style.fontWeight = "600";
+reset.style.cursor ="pointer"
+reset.style.transform ="translateY(-2px)"
 
 
 
