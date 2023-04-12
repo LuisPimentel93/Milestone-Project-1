@@ -1,46 +1,81 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*, *::after, *::before{
+   box-sizing: border-box;
 }
 
 :root{
-    --white: #FFFFFF;
-    --winning-blocks:#DCDCDC;
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
 }
 body{
-    color: gold;
-    font-family: cursive;
-    background-color: black;
+    
+    margin: 0;
+  
 }
-/* .container
-{
-    padding: 40px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-} */
 
 .box{
-    height: 150px;
-    width: 150px;
+    height: var(--cell-size);
+    width: var(--cell-size);
+    border: 1px solid black;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: gold;
-    background-color:black ;
-    font-size: 120px;
-    border-right:2px solid ;
-    border-bottom: 2px solid;
+    align-items: center;
+    font-family: cursive;
+    font-size: xx-large;
+   
 }
 
-.box:nth-child(3n){
+
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: none;
+}
+
+.box:nth-child(3n + 1){
+    border-left: none ;
+}
+
+.box:nth-child(3n + 3){
     border-right: none;
 }
 
-.box:nth-child(6) ~ .box{
+.box:last-child,
+.box:nth-child(8),
+.box:nth-child(7) {
     border-bottom: none;
+}
+
+.winning-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+
+}
+
+.winning-message button{
+    font-size: 3rem;
+    cursor: grab;
+    background-color: white;
+    border: 1 px solid black;
+    padding: .25em , 5em;
+}
+
+.winning-message button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}   
+
+.winning-message.show{
+    display: flex;
 }
