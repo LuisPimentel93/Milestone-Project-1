@@ -12,10 +12,8 @@ gameStyle.style.justifyContent = "center"
 gameStyle.style.alignContent = "center"
 gameStyle.style.display = "grid"
 gameStyle.style.padding = "40px"
-gameStyle.style.backgroundColor = "blue"
-
 gameStyle.style.flexDirection = "column"
-
+gameStyle.style.backgroundColor = 'orange'
 
 // // gameboard CSS
 const boardLayout = document.querySelector("#gameboard")
@@ -25,12 +23,14 @@ boardLayout.style.display = "grid";
 boardLayout.style.justifyContent = "center"
 boardLayout.style.alignContent = "center"
 boardLayout.style.gridTemplateColumns = "repeat(3, auto)"
+boardLayout.style.backgroundColor = "lightpink"
 
 const h1Style = document.querySelector("#playerText")
 h1Style.style.fontSize = "54px"
 h1Style.style.justifyContent = "center"
 h1Style.style.alignContent = "center"
 h1Style.style.fontFamily= "cursive"
+h1Style.style.color= "lightblue"
 
 // // button 
 
@@ -43,6 +43,8 @@ reset.style.transition = "200ms transform";
 reset.style.fontWeight = "600";
 reset.style.cursor ="pointer"
 reset.style.transform ="translateY(-2px)"
+reset.style.backgroundColor = 'lightblue'
+reset.style.color = 'orange'
 
 
 

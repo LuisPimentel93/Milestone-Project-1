@@ -3,17 +3,17 @@ let reStartBtn = document.getElementById("restartButton");
 // changed the html collection to an array usin Array.from
 let boxes = Array.from(document.getElementsByClassName("box")); 
 let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
-// let drawIndicator = getComputedStyle(document.body).getPropertyValue('--draw-block')
+let drawIndicator = getComputedStyle(document.body).getPropertyValue('--draw-blocks')
 const winningCombos = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]
 
 ]
-const O_TEXT = "O";
-const X_TEXT = "X";
+const O_TEXT = "Ara";
+const X_TEXT = "Ava";
 let currentPlayer = X_TEXT;
 // this varilable  is making sure that the boxes that a used can not be changed
 let spaces = Array(9).fill(null);
-// let count_plays = 0
+let count_plays = 0
 
 
 const startGame =() => {
@@ -23,7 +23,7 @@ const startGame =() => {
 function boxClicked(e) {
     const id = e.target.id
 
-    if(!spaces[id] ){
+    if(!spaces[id] && count_plays < 9 ){
         spaces[id] = currentPlayer
         e.target.innerText = currentPlayer
         
@@ -32,12 +32,18 @@ function boxClicked(e) {
 
              playerText.innerText = `${currentPlayer} Has Won!`
             let winning_blocks = playerHasWon()
+            count_plays = 10
             winning_blocks.map(box => boxes[box].style.backgroundColor=winnerIndicator)
             return
         }
-      
+        count_plays++
         // this is a If statement that changes from X text to O text when a box is clicked
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
+    }
+
+    if(count_plays === 9){
+        playerText.innerText =' Better Luck Next Time!'
+        boxes.forEach(box => box.style.color = drawIndicator)
     }
 }
 
@@ -61,13 +67,14 @@ reStartBtn.addEventListener('click', restart)
 
 function restart(){
     spaces.fill(null)
-
+    count_plays = 0
     boxes.forEach(box => {
         box.innerText = ''
         box.style.backgroundColor = ''
+        box.style.color = 'black'
     })
 
-    playerText = 'Tic Tac Toe'
+    playerText.innerText = 'Tic Tac Toe'
 
     currentPlayer = X_TEXT
 }
