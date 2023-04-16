@@ -67,11 +67,7 @@ healers.src ="assets/185.webp"
 healers.alt ="Picture of bluey and bingo "
 healers.id = 'healers'
 div.append(healers)
-// const footerPic= document.createElement('img')
-// footerPic.src ="assets/185.webp"
-// footerPic.alt ="assets/165524-bluey-free-transparent-image-hd.png"
-// footerPic.id = 'healers'
-// div5.append(footerPic)
+
 
 
 

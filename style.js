@@ -19,7 +19,7 @@ gameStyle.style.gridColumn = "1/4"
 // // gameboard CSS
 const boardLayout = document.querySelector("#gameboard")
 boardLayout.style.width = "50vw";
-boardLayout.style.height = "72vh"
+
 boardLayout.style.display = "grid";
 boardLayout.style.justifyContent = "center"
 boardLayout.style.alignContent = "center"
