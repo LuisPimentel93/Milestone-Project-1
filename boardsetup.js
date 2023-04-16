@@ -16,8 +16,33 @@ const div2 = document.createElement('div')
     div2.id = 'gameboard'
     document.body.append(div2)
 
+const div3 = document.createElement('div')
+div3.id = 'avasTurn'
+body.append(div3)
+const imgava = document.createElement('img')
+imgava.src="assets/Ava.JPG"
+imgava.id = 'ava'
+div3.append(imgava)
+
+
+const div4 = document.createElement('div')
+div4.id = 'arasTurn'
+body.append(div4)
+const imgara = document.createElement('img')
+imgara.src="assets/AraceliJPG.JPG"
+imgara.id = 'ara'
+div4.append(imgara)
+
+
+// const img = document.createElement('img')
+// img.src="assets/Ava.JPG"
+// img.id = 'playerTurn'
+// div2.append(img)
+
+
+
 function element(num){
-    let gameBoard =document.getElementById('#gamebaord')
+    let gameBoard =document.getElementById('#gameboard')
     const div = document.createElement('div')
     div.className = 'box'
     div.id = num

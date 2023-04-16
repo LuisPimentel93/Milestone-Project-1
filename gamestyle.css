@@ -14,8 +14,27 @@
 body{
     
     margin: 0;
+    display: inline-flex
     
   
+}
+#container{
+    display: ;
+}
+
+
+#avasTurn{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    flex: ;
+
+}
+#arasTurn{
+    width: 100vw;
+    height: 100vh;
+   background-color: orange;
+
 }
 
 .box{
@@ -44,6 +63,11 @@ h2{
     align-items: center;
     color: white;
 
+}
+
+img{
+    width: 100px;
+    height: 100px;
 }
 
 
