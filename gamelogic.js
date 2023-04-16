@@ -66,24 +66,6 @@ function showAva(){
    return true
 }
 
-
-   
-
-
-
-
-// switch(currentPlayer = 'Ava'){
-//     case "Ava":
-//         document.getElementById('ara').style.display = 'none'
-//     break
-//     default:
-//         document.getElementById('ara').style.display = 'flex'
-// }
-
-
-
-
-
 // this is how  the game check to if there is an X or an O for each position in the array of the in th winning combos
 function playerHasWon(){
     for ( const condition of winningCombos){
