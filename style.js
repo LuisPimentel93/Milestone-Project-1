@@ -11,19 +11,22 @@ const gameStyle = document.querySelector("#container")
 gameStyle.style.justifyContent = "center"
 gameStyle.style.alignContent = "center"
 gameStyle.style.display = "grid"
-gameStyle.style.padding = "40px"
 gameStyle.style.flexDirection = "column"
 gameStyle.style.backgroundColor = 'orange'
+gameStyle.style.gridRow = "1"
+gameStyle.style.gridColumn = "1/4"
 
 // // gameboard CSS
 const boardLayout = document.querySelector("#gameboard")
-boardLayout.style.width = "100vw";
-boardLayout.style.height = "100vh"
+boardLayout.style.width = "50vw";
+boardLayout.style.height = "75vh"
 boardLayout.style.display = "grid";
 boardLayout.style.justifyContent = "center"
 boardLayout.style.alignContent = "center"
 boardLayout.style.gridTemplateColumns = "repeat(3, auto)"
 boardLayout.style.backgroundColor = "lightpink"
+boardLayout.style.gridRow = "2"
+boardLayout.style.gridColumn = "2"
 
 const h1Style = document.querySelector("#playerText")
 h1Style.style.fontSize = "54px"

@@ -19,6 +19,10 @@ const div2 = document.createElement('div')
 const div3 = document.createElement('div')
 div3.id = 'avasTurn'
 body.append(div3)
+const avaName = document.createElement('h2')
+avaName.innerText = 'Ava Marie'
+avaName.id ='avatitle'
+div3.append(avaName)
 const imgava = document.createElement('img')
 imgava.src="assets/Ava.JPG"
 imgava.id = 'ava'
@@ -28,6 +32,10 @@ div3.append(imgava)
 const div4 = document.createElement('div')
 div4.id = 'arasTurn'
 body.append(div4)
+const araName = document.createElement('h2')
+araName.innerText = 'Araceli Rose'
+araName.id ='aratitle'
+div4.append(araName)
 const imgara = document.createElement('img')
 imgara.src="assets/AraceliJPG.JPG"
 imgara.id = 'ara'

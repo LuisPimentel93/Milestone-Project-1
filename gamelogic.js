@@ -1,5 +1,7 @@
 let playerText = document.getElementById("playerText"); 
 let reStartBtn = document.getElementById("restartButton");
+;
+
 // changed the html collection to an array usin Array.from
 let boxes = Array.from(document.getElementsByClassName("box")); 
 let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
@@ -44,8 +46,27 @@ function boxClicked(e) {
     if(count_plays === 9){
         playerText.innerText =' Better Luck Next Time!'
         boxes.forEach(box => box.style.color = drawIndicator)
+
     }
+
+    
 }
+
+const showPlayer = document.getElementById('ara')
+let currentMove  = "Ava"
+
+    if(currentmove === "ava"){
+        document.getElementById('ara').style.display = "none"
+    } else{
+        document.getElementById('ara').style.display = "flex"
+    }
+   
+   
+
+
+
+
+
 
 
 
