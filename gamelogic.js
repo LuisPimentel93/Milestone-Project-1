@@ -43,6 +43,7 @@ function boxClicked(e) {
         count_plays++
         // this is a If statement that changes from X text to O text when a box is clicked
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
+        showAva()
     }
 
     if(count_plays === 9){
@@ -54,18 +55,22 @@ function boxClicked(e) {
     
 }
 
-// function showAva(){
-//     if(currentPlayer ==='Ava'){
-//         document.getElementById('ara').style.display ="none"
-//     } else{
-//         document.getElementById('ara').style.display ="flex"
-//     }
-//    return false
-// }
+function showAva(){
+    if(currentPlayer ==='Ava'){
+        document.getElementById('ara').style.display ="none"
+        document.getElementById('ava').style.display ="flex"
+    } else{
+        document.getElementById('ara').style.display ="flex"
+        document.getElementById('ava').style.display ="none"
+    }
+   return true
+}
+
+
    
 
 
-// showAva()
+
 
 // switch(currentPlayer = 'Ava'){
 //     case "Ava":

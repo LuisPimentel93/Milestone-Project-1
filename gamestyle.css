@@ -8,20 +8,20 @@
     --cell-size: 15vw;
     --winning-blocks: lightgray;
     --draw-blocks: red;
-    --mark-size: calc(var(--cell-size) * .9)
+    
 
 }
 body{
     
     margin: 0;
     display: grid;
-    width: auto;
-    height: auto;
     font-family: cursive;
+    max-width: 100%;
+  
     
 }
 
-
+/*  This is the CSS for the divs that have characters in them and Pictures */
 #avasTurn{
     width: 25vw;
     background-color: skyblue;
@@ -59,11 +59,11 @@ body{
 }
 
 #healers{
-    grid-row: 2;
-    
+    grid-row: 1;
+    grid-column: 3;
+    justify-content: right;   
+    width: 100px; 
 }
-
-
 
 #arasTurn{
     width: 25vw;
@@ -75,9 +75,7 @@ body{
     display: grid;
     
 }
-
-
-
+/* This is the css for the divs that create the board */
 .box{
     height: var(--cell-size);
     width: var(--cell-size);
@@ -86,17 +84,13 @@ body{
     justify-content: center;
     align-items: center;
     font-family: cursive;
-    font-size: xx-large;
+    font-size: 100px;
     cursor: pointer;
     border-color: purple;   
 }
 
-h1{
-    color: white;
- }
 
-
-
+/* This is how I removed the outer border from the board game */
 .box:first-child,
 .box:nth-child(2),
 .box:nth-child(3) {
