@@ -15,37 +15,43 @@ const button = document.createElement('button')
 const div2 = document.createElement('div')
     div2.id = 'gameboard'
     document.body.append(div2)
+const div5 = document.createElement('div')
+div5.id = 'audio'
+div5.innerHTML = "A Bluey Themed TIC Tac Toe game with my kids in mind!"
+body.append(div5)
 
 const div3 = document.createElement('div')
 div3.id = 'avasTurn'
 body.append(div3)
-const avaName = document.createElement('h2')
-avaName.innerText = 'Ava Marie'
-avaName.id ='avatitle'
-div3.append(avaName)
 const imgava = document.createElement('img')
 imgava.src="assets/Ava.JPG"
 imgava.id = 'ava'
 div3.append(imgava)
+const avaName = document.createElement('h2')
+avaName.innerText = 'Ava Marie'
+avaName.id ='avatitle'
+div3.append(avaName)
 
 
 const div4 = document.createElement('div')
 div4.id = 'arasTurn'
 body.append(div4)
+const imgara = document.createElement('img')
+imgara.src="assets/Araceli.JPG"
+imgara.id = 'ara'
+div4.append(imgara)
 const araName = document.createElement('h2')
 araName.innerText = 'Araceli Rose'
 araName.id ='aratitle'
 div4.append(araName)
-const imgara = document.createElement('img')
-imgara.src="assets/AraceliJPG.JPG"
-imgara.id = 'ara'
-div4.append(imgara)
+
+const audio = document.createElement('audio')
+audio.src="assets/tomp3.cc - Bluey Theme Song  10 Minute Loop  Bluey.mp3" 
+audio.controls = true
+audio.autoplay = true
+div5.append(audio)
 
 
-// const img = document.createElement('img')
-// img.src="assets/Ava.JPG"
-// img.id = 'playerTurn'
-// div2.append(img)
 
 
 

@@ -28,6 +28,8 @@ function boxClicked(e) {
     if(!spaces[id] && count_plays < 9 ){
         spaces[id] = currentPlayer
         e.target.innerText = currentPlayer
+
+      
         
         // this will change the Tic Tac Toe message to either X or O has won
         if(playerHasWon() !==false){
@@ -52,19 +54,26 @@ function boxClicked(e) {
     
 }
 
-const showPlayer = document.getElementById('ara')
-let currentMove  = "Ava"
-
-    if(currentmove === "ava"){
-        document.getElementById('ara').style.display = "none"
-    } else{
-        document.getElementById('ara').style.display = "flex"
-    }
+// function showAva(){
+//     if(currentPlayer ==='Ava'){
+//         document.getElementById('ara').style.display ="none"
+//     } else{
+//         document.getElementById('ara').style.display ="flex"
+//     }
+//    return false
+// }
    
-   
 
 
+// showAva()
 
+// switch(currentPlayer = 'Ava'){
+//     case "Ava":
+//         document.getElementById('ara').style.display = 'none'
+//     break
+//     default:
+//         document.getElementById('ara').style.display = 'flex'
+// }
 
 
 

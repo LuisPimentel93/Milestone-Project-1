@@ -12,14 +12,14 @@ gameStyle.style.justifyContent = "center"
 gameStyle.style.alignContent = "center"
 gameStyle.style.display = "grid"
 gameStyle.style.flexDirection = "column"
-gameStyle.style.backgroundColor = 'orange'
+gameStyle.style.backgroundColor = '#FFFDD0'
 gameStyle.style.gridRow = "1"
 gameStyle.style.gridColumn = "1/4"
 
 // // gameboard CSS
 const boardLayout = document.querySelector("#gameboard")
 boardLayout.style.width = "50vw";
-boardLayout.style.height = "75vh"
+boardLayout.style.height = "72vh"
 boardLayout.style.display = "grid";
 boardLayout.style.justifyContent = "center"
 boardLayout.style.alignContent = "center"
@@ -48,6 +48,17 @@ reset.style.cursor ="pointer"
 reset.style.transform ="translateY(-2px)"
 reset.style.backgroundColor = 'lightblue'
 reset.style.color = 'orange'
+
+const gameFooter = document.querySelector("#audio")
+gameFooter.style.justifyContent = "center"
+gameFooter.style.alignContent = "center"
+gameFooter.style.display = "grid"
+gameFooter.style.flexDirection = "column"
+gameFooter.style.backgroundColor = '#FFFDD0'
+gameFooter.style.gridRow = "3"
+gameFooter.style.gridColumn = "1/4"
+gameFooter.style.fontSize ='40px'
+
 
 
 
