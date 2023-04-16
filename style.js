@@ -53,7 +53,6 @@ const gameFooter = document.querySelector("#audio")
 gameFooter.style.justifyContent = "center"
 gameFooter.style.alignContent = "center"
 gameFooter.style.display = "grid"
-gameFooter.style.flexDirection = "column"
 gameFooter.style.backgroundColor = '#FFFDD0'
 gameFooter.style.gridRow = "3"
 gameFooter.style.gridColumn = "1/4"
