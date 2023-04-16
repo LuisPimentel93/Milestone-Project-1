@@ -16,6 +16,7 @@ gameStyle.style.backgroundColor = '#FFFDD0'
 gameStyle.style.gridRow = "1"
 gameStyle.style.gridColumn = "1/4"
 
+
 // // gameboard CSS
 const boardLayout = document.querySelector("#gameboard")
 boardLayout.style.display = "grid";

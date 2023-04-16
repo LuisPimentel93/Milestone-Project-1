@@ -16,11 +16,18 @@ body{
     margin: 0;
     display: grid;
     font-family: cursive;
-    max-width: 100%;
+    min-height: 100vh;
+    
+
   
     
 }
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
 
+}
 /*  This is the CSS for the divs that have characters in them and Pictures */
 #avasTurn{
     width: 25vw;
@@ -74,6 +81,10 @@ body{
     align-items: center;
     display: grid;
     
+}
+
+.myturn{
+    font-size: xx-large;
 }
 /* This is the css for the divs that create the board */
 .box{
