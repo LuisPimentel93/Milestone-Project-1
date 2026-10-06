@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./gamestyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10203a">
+  <title>Ava vs. Araceli — Tic Tac Toe</title>
+  <link rel="stylesheet" href="./gamestyle.css">
 </head>
 <body>
- 
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">Pimentel Family Game Night</p>
+      <h1>Ava <span>vs.</span> Araceli</h1>
+      <p class="subtitle">Tic Tac Toe — Blue Heeler Edition</p>
+    </header>
+
+    <section class="scoreboard" aria-label="Match score">
+      <article class="player-card ava-card" id="avaCard">
+        <img src="assets/Ava.JPG" alt="Ava">
+        <div>
+          <p class="player-label">Player A</p>
+          <h2>Ava Marie</h2>
+          <p class="score"><span id="avaScore">0</span> wins</p>
+        </div>
+      </article>
+
+      <div class="round-status">
+        <p id="statusText" aria-live="polite">Ava goes first!</p>
+        <span id="roundCount">Round 1</span>
+      </div>
+
+      <article class="player-card ara-card" id="araCard">
+        <img src="assets/Araceli.JPG" alt="Araceli">
+        <div>
+          <p class="player-label">Player R</p>
+          <h2>Araceli Rose</h2>
+          <p class="score"><span id="araScore">0</span> wins</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="game-area">
+      <div id="gameboard" class="gameboard" role="grid" aria-label="Tic Tac Toe board">
+        <button class="cell" role="gridcell" data-index="0" aria-label="Top left"></button>
+        <button class="cell" role="gridcell" data-index="1" aria-label="Top middle"></button>
+        <button class="cell" role="gridcell" data-index="2" aria-label="Top right"></button>
+        <button class="cell" role="gridcell" data-index="3" aria-label="Middle left"></button>
+        <button class="cell" role="gridcell" data-index="4" aria-label="Center"></button>
+        <button class="cell" role="gridcell" data-index="5" aria-label="Middle right"></button>
+        <button class="cell" role="gridcell" data-index="6" aria-label="Bottom left"></button>
+        <button class="cell" role="gridcell" data-index="7" aria-label="Bottom middle"></button>
+        <button class="cell" role="gridcell" data-index="8" aria-label="Bottom right"></button>
+      </div>
+
+      <div class="controls">
+        <button id="nextRoundButton" class="primary-btn" type="button">New Round</button>
+        <button id="resetMatchButton" class="secondary-btn" type="button">Reset Match</button>
+      </div>
+    </section>
+
+    <section class="family-strip" aria-label="Game theme">
+      <img src="assets/165520-bluey-dog-free-download-image.png" alt="Bluey character">
+      <div>
+        <strong>Made for Ava & Araceli</strong>
+        <p>First to bragging rights wins.</p>
+        <audio id="themeAudio" src="assets/tomp3.cc - Bluey Theme Song  10 Minute Loop  Bluey.mp3" preload="none"></audio>
+        <button id="musicButton" class="music-btn" type="button" aria-pressed="false">♪ Play theme music</button>
+      </div>
+      <img src="assets/165525-bluey-download-hd.png" alt="Bingo character">
+    </section>
+  </main>
+
+  <script src="./gamelogic.js"></script>
 </body>
-<script src="boardsetup.js"></script>
-<script src="style.js"></script>
-<script src="gamelogic.js"></script>
 </html>
